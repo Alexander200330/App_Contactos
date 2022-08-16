@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="js/Lostyle.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <form>
+            <h1 class="title">Login</h1>
+            <h1 class="alert alert-danger" id="error"></h1>
+            <label>
+                <i class="fa-solid fa-at"></i>
+                <input placeholder="Email address" type="email" id="user">
+            </label>
+            <label>
+                <i class="fa-solid fa-lock"></i>
+                <input placeholder="Password" type="password" id="pass">
+            </label>
+            <a href="#" class="link">Has olvidado tu contraseña?</a>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <script src="js/ValidarLogin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>App contactos</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">App Contactos</span>
+      </div>
+
+        </div>
+    </nav>
+    
+    <div class="row justify-content-end">
+        <div class="form-group" id="Buscar">
+          <input type="text" name=""  class="btn" id="txtBuscar" placeholder="buscar">
+          <button type="submit" class="btn btn-success" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+
+    <div class="container mt-" id="body">
+      <div class="row">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Agregar contacto</h2>
+            </div>
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="txtId" placeholder="Ingrese un id">
+                  <br>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                  <br>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">
+                  <br>
+              </div>
+              <div class="form-group">
+                  <input type="email" class="form-control" id="txtCorreo" placeholder="Ingrese su correo">
+                  <br>
+              </div>
+                <button type="submit" class="btn btn-primary btn-block">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="col-md-8" >
+                <div class="row text-right">
+
+                <table class="table">
+                    <thead class="thead-dark bg-light">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Eliminar</th>
+                        <th scope="col">Actualizar</th>
+                        <th scope="col">Email</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tasks">
+                      <tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
